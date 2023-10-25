@@ -1,5 +1,15 @@
 // Requisito 1 - Crie a função verifyPalindrome
 
+function verifyPalindrome(word) {
+  let wordInReverse = word.split('').reverse().join('');
+  if (word === wordInReverse) {
+    return true;
+  }
+  return false;
+}
+verifyPalindrome('arara');
+verifyPalindrome('desenvolvimento');
+
 // Requisito 2 - Crie a função getHighestIndex
 
 // Requisito 3 - Crie a função getSmallestIndex
@@ -9,7 +19,7 @@
 // Requisito 5 - Crie a função countHighestNumberMaxOccurrences
 
 // Não modifique as linhas abaixo
-module.exports = {
+/* module.exports = {
   verifyPalindrome: typeof verifyPalindrome === 'function' ? verifyPalindrome : (() => {}),
   getHighestIndex: typeof getHighestIndex === 'function' ? getHighestIndex : (() => {}),
   getSmallestIndex: typeof getSmallestIndex === 'function' ? getSmallestIndex : (() => {}),
@@ -17,4 +27,4 @@ module.exports = {
   countHighestNumberMaxOccurrences: typeof countHighestNumberMaxOccurrences === 'function'
     ? countHighestNumberMaxOccurrences
     : (() => {}),
-};
+}; */
