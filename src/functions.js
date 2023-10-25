@@ -1,5 +1,5 @@
 // Requisito 1 - Crie a função verifyPalindrome
-/* function verifyPalindrome(word) {
+function verifyPalindrome(word) {
   let wordInReverse = word.split('').reverse().join('');
   if (word === wordInReverse) {
     return true;
@@ -7,7 +7,7 @@
   return false;
 }
 verifyPalindrome('arara');
-verifyPalindrome('desenvolvimento'); */
+verifyPalindrome('desenvolvimento');
 
 // Requisito 2 - Crie a função getHighestIndex
 
