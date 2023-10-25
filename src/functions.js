@@ -29,12 +29,12 @@ getHighestIndex([-9, -1, -3, -5, -7]);
 
 function getSmallestIndex(array) {
   let smallestNumber = array[0];
-  for (let index = 0; index < array.length; index += 1) {
+  for (let index = 0; index <= array.length; index += 1) {
     if (array[index] < smallestNumber) {
       smallestNumber = array[index];
     }
-    return array.indexOf(smallestNumber);
   }
+  return array.indexOf(smallestNumber);
 }
 
 getSmallestIndex([2, 3, 6, 7, 10, 1]);
