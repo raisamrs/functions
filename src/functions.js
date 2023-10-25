@@ -19,7 +19,7 @@ verifyPalindrome('desenvolvimento');
 // Requisito 5 - Crie a função countHighestNumberMaxOccurrences
 
 // Não modifique as linhas abaixo
-/* module.exports = {
+module.exports = {
   verifyPalindrome: typeof verifyPalindrome === 'function' ? verifyPalindrome : (() => {}),
   getHighestIndex: typeof getHighestIndex === 'function' ? getHighestIndex : (() => {}),
   getSmallestIndex: typeof getSmallestIndex === 'function' ? getSmallestIndex : (() => {}),
@@ -27,4 +27,4 @@ verifyPalindrome('desenvolvimento');
   countHighestNumberMaxOccurrences: typeof countHighestNumberMaxOccurrences === 'function'
     ? countHighestNumberMaxOccurrences
     : (() => {}),
-}; */
+};
