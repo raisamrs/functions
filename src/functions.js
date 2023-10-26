@@ -60,18 +60,18 @@ getLongestWord(['JavaScript', 'HTML', 'CSS', 'GitHub', 'Unix']);
 function countHighestNumberMaxOccurrences(arrayNumbers) {
   let highestNumber = arrayNumbers[0];
   let maxOccurrences = 0;
+
   for (let index = 0; index < arrayNumbers.length; index += 1) {
     if (arrayNumbers[index] > highestNumber) {
       highestNumber = arrayNumbers[index];
-    }
-  }
-  for (let index2 = 0; index2 < arrayNumbers.length; index2 += 1) {
-    if (highestNumber === arrayNumbers[index2]) {
+      maxOccurrences = 1;
+    } else if (arrayNumbers[index] === highestNumber) {
       maxOccurrences += 1;
     }
   }
   return maxOccurrences;
 }
+
 countHighestNumberMaxOccurrences([1, 9, 2, 3, 9, 5, 7]);
 countHighestNumberMaxOccurrences([0, 4, 4, 4, 9, 2, 1]);
 countHighestNumberMaxOccurrences([-2, -2, -1]);
