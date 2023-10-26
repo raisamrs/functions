@@ -42,6 +42,18 @@ getSmallestIndex([2, 4, 6, 7, 10, 0, -3]);
 
 // Requisito 4 - Crie a função getLongestWord
 
+function getLongestWord(arrayWords) {
+  let longestWord = arrayWords[0];
+
+  for (let index = 0; index < arrayWords.length; index += 1) {
+    if (arrayWords[index].length > longestWord.length) {
+      longestWord = arrayWords[index];
+    }
+  }
+  return longestWord;
+}
+getLongestWord(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
+getLongestWord(['JavaScript', 'HTML', 'CSS', 'GitHub', 'Unix']);
 // Requisito 5 - Crie a função countHighestNumberMaxOccurrences
 
 // Não modifique as linhas abaixo
