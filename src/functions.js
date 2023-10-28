@@ -12,13 +12,22 @@ verifyPalindrome('desenvolvimento');
 // Requisito 2 - Crie a função getHighestIndex
 
 function getHighestIndex(array) {
+  /*   let highestNumber = array[0];
+    for (let index = 0; index < array.length; index += 1) {
+      if (array[index] > highestNumber) {
+        highestNumber = array[index];
+      }
+    }
+    return array.indexOf(highestNumber); */
+
   let highestNumber = array[0];
+  let highestIndex = 0;
   for (let index = 0; index < array.length; index += 1) {
     if (array[index] > highestNumber) {
       highestNumber = array[index];
+      highestIndex = index;
     }
-  }
-  return array.indexOf(highestNumber);
+  } return console.log(highestIndex);
 }
 
 getHighestIndex([2, 3, 6, 7, 10, 1]);
